@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" type = "text/css" href = "./Css/NavigationBar.css" />
+<link rel = "stylesheet" type = "text/css" href = "./Css/main.css" />
+	<title>
+		List of Movies
+	</title>
+
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+  
+  <div class="topnav">
+    
+    <div class="search-container">
+      <input id = 'search' type="text" placeholder="Search.." name="search">
+      <button id="SearchButton" onclick="FetchMovies()" ><i class="fa fa-search" ></i></button>
+    </div>
+
+  </div>
+  <div id = 'page' class="page">
+  </div>
+<div id="message" class="message"><h3>Search movies by Title..</h3></div>
+<div id = "pagination" class="center" >
+  <div id="count" style="font-style: italic;">count</div>
+  <div class="pagination">
+    <button id="prevButton" onclick="paginatePrev()"><div>Prev</div></button>
+  </div>
+  <div class="pagination">
+    <button id="nextButton" onclick="paginateNext()"><div>Next</div></button>
+  </div>
+</div>
+<script src="./Scripts/Utils.js">
+</script>
+
+</body>
+</html>
