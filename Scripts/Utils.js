@@ -1,3 +1,7 @@
+/* A file containing various functions
+Author: Rohit
+*/
+
 const ApiKey = '28de8018';
 const JUMP = 5;
 var index = 0;
@@ -62,7 +66,7 @@ function FetchMovies(){
     
     }
 		
-    var URL = 'http://www.omdbapi.com/?apikey='+ ApiKey + '&s=' + query  ;
+    var URL = 'https://www.omdbapi.com/?apikey='+ ApiKey + '&s=' + query  ;
 
     request.open('GET', URL);
     try{
