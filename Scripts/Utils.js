@@ -184,7 +184,7 @@ x.innerHTML = message;
 
 function SetResultCount(Id){
   var x = document.getElementById(Id);
-  x.innerHTML = 'Showing'+ ' '+ '<b>' + index + '</b>' +  ' ' + 'of' + ' ' + '<b>'+ Data.length +'</b>' ; 
+  x.innerHTML = 'Showing Page'+ ' '+ '<b>' + Math.ceil(index/JUMP) + '</b>' +  ' ' + 'of' + ' ' + '<b>'+ Math.ceil(Data.length/JUMP) +'</b>' ; 
 }
 
 
