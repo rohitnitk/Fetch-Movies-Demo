@@ -16,6 +16,7 @@
 
   .ResultNode {
   background-color: white;
+  max-width: 600px;
   width: 90%;
   height: auto;
   padding: 20px;
@@ -52,7 +53,8 @@ img {
   width:100%; 
     margin:0 auto; 
     text-align: center;
-    width:800px; 
+      max-width: 600px;
+ 
     margin:0 auto; 
     padding: 300px; 
     font-size: 20px;
